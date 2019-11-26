@@ -20,3 +20,9 @@
 - CleanWebpackPlugin,每次清除output目录下到文件，引入时用对象引入{},使用时不用传参。
 
 - webpack-manifest-plugin-「你的模块映射到输出 bundle 的过程」保持追踪.
+
+# webpack 开发
+- 快速定位错误所在行数， devtools：inline-source-map.
+- 观察模式 - watch 当文件修改会自动重新编译。浏览器还需要自己重新刷新
+- webpack-dev-server，在配置文件下devServer指定contentBase路径，再命令行运行npm run webpack-dev-server --open 即可。能使得每次改动实时刷新，并且浏览器也刷新。
+- webpack-dev-middleware 结合express 。可以将webpack处理后当文件传递给服务器。
