@@ -2,9 +2,11 @@
   "name": "mycli",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js",
+    "build": "webpack"
   },
   "bin": {
     "app": "./app.js",
@@ -12,12 +14,19 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
   "devDependencies": {
     "chalk": "^3.0.0",
     "commander": "^4.0.1",
+    "css-loader": "^3.2.0",
     "emoji": "^0.3.2",
+    "file-loader": "^5.0.2",
     "inquirer": "^7.0.0",
-    "node-emoji": "^1.10.0"
+    "node-emoji": "^1.10.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
