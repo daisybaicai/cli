@@ -26,3 +26,7 @@
 - 观察模式 - watch 当文件修改会自动重新编译。浏览器还需要自己重新刷新
 - webpack-dev-server，在配置文件下devServer指定contentBase路径，再命令行运行npm run webpack-dev-server --open 即可。能使得每次改动实时刷新，并且浏览器也刷新。
 - webpack-dev-middleware 结合express 。可以将webpack处理后当文件传递给服务器。
+
+## webpack 模块热更新
+- devServer 里面的hot属性配置为true
+- new webpack.HotModuleReplacementPlugin()
